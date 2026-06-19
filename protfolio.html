@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+  <style>   
+
+     *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#f5f5f5;
+}
+
+nav{
+    background:#0047ff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo{
+    color:white;
+    background:#222;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    background:#222;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+.hero{
+    height:20vh;     
+    background:linear-gradient(to right,#0047ff,#4f8cff);
+    color:white;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+button{
+    background:#b8ff5a;
+    padding:10px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+#Skills{
+    background-color: rgb(159, 188, 214);
+    color: white;
+    margin-top: 15px;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.skills-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+#card img{
+      width: 100%;
+      height: 270px;
+}
+
+#card{
+    width: 300px;
+    height: 440px;
+    border: 2px solid black;    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+
+.card-content{
+    padding: 15px;
+}
+
+.card-content h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#project{
+    background-color: rgb(159, 188, 214);    
+    color: white;
+    margin-top: 40px;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold; 
+    
+   
+}
+
+#btn{
+    margin-top: 10px;
+}
+
+.project-container{
+    width: 100%;
+   
+   
+   
+}
+
+.project-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#c-size{
+      width: 100%;
+      height:200px;
+
+}
+
+#Contact{
+    width: 100%;
+    
+}
+
+.contact-h{
+    background-color: rgb(159, 188, 214);    
+    color: white;
+    margin-top: 40px;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold; 
+}
+
+label, input,textarea{
+    font-weight: 700;
+    display: block;
+    margin: 10px;
+   
+}
+
+.contact-form{
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color:linear-gradient(to right,#0047ff,#4f8cff);
+    width: 500px;    
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+input{
+    height: 30px;
+    width: 90%;
+    font-size: 17px;
+    
+
+}
+
+#s-button{
+    margin: 20px;
+   
+}
+
+textarea{
+    width: 90%;
+    font-size: 17px;
+}
+
+.contact-form{
+
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.918);
+    color: white;
+    margin-top: 20px;
+    padding: 30px;
+    width: 100%;    
+    align-items: center;
+    text-align: center;
+    
+}
+</style>
+   
+</head>  
+ <body>
+
+    <nav>
+        <div class="logo">My Portfolio</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Hi, I'm Ranjeet</h1>
+        <p>Student | Web Developer</p>
+        <a href="#home"><button>Hire Me</button></a>
+    </section>
+
+    
+    <div id="Skills">Skills</div>
+
+    <div class="skills-card">
+        <div id="card">
+            <img src="html.jpeg" alt="html image">
+            <div class="card-content"><h2>MTML</h2><p>HTML is the standard language used to create and structure web pages.</p><a href=""><button id="btn"><i class="fa-regular fa-eye"></i>View Project</button></a></div>
+        </div>
+
+        <div class="skills-card">
+        <div id="card">
+            <img src="css.jpeg" alt="html image">
+            <div class="card-content"><h2>CSS</h2><p>CSS is used to style and design web pages.</p><a href=""><button id="btn"><i class="fa-regular fa-eye"></i>View Project</button></a></div>
+        </div>
+
+        <div class="skills-card">
+        <div id="card">
+            <img src="js img.jpeg" alt="JavaScript image" >
+            <div class="card-content"><h2>JAVASCRIPT</h2><p>JavaScript is used to make web pages interactive and dynamic.</p><a href=""><button id="btn"><i class="fa-regular fa-eye"></i>View Project</button></a></div>
+        </div>
+    </div>
+
+    <div class="project-container">
+
+       <div id="project">Project</div>
+
+       <div class="project-card">
+        <div id="card">
+            <img src="Restaurant shop.jpeg" alt="html image" id="c-size">
+            <div class="card-content"><h2><i class="fa-solid fa-utensils"></i>Restaurant shop</h2><p><strong>Tech:</strong> Html,Css,Js</p><a href=""><button id="btn"><i class="fa-regular fa-eye"></i>View Project</button></a></div>
+        </div>
+
+        <div class="project-card">
+        <div id="card">
+            <img src="sweet shop 2.jpeg" alt="html image" id="c-size">
+            <div class="card-content"><h2><i class="fa-sharp-duotone fa-thin fa-cake-slice"></i> Sweet Shop</h2><p><strong>Tech:</strong> Html,Css,Js</p><a href=""><button id="btn"><i class="fa-regular fa-eye"></i>View Project</button></a></div>
+        </div>
+    </div>
+
+   <div id="Contact">
+    <div class="contact-h">Contact Me</div>
+
+    <div id="form">
+    <form class="contact-form">
+        <label>Full Name*:</label>
+        <input type="text" placeholder="Your Name" required>
+
+         <label>Email Id*:</label>
+        <input type="email" placeholder="Your Email" required>
+
+        <label>Massage*:</label>  
+        <textarea rows="5" placeholder="Your Message"></textarea>       
+
+        <button type="submit" id="s-button">Send Message</button>
+        </div>
+    </form>
+   </div>
+
+
+
+      
+<footer>
+    <p>© 2025 My Full Stack Portfolio. Built with HTML, CSS & JavaScript.</p>
+    <p><i class="fa-regular fa-envelope"></i>ranjit3323@gmail.com | <i class="fa-solid fa-mobile-screen"></i> +91 8252174187</p>
+</footer>
+        
+</body>
+</html>
