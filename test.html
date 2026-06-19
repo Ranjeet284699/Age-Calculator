@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbte Bihar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        
+
+        @media (max-width:800px) {
+            .subnavar{
+                background-color: aqua;
+            }
+        }
+
+        .menu{
+            background-color: rgb(245, 235, 221);
+        }
+
+        ul{
+            list-style: none;
+           justify-content: space-between;
+           text-align: center;
+           align-items: center;
+           list-style: none;
+           -webkit-box-pack: justify;
+          -webkit-box-align: center;
+          flex-wrap: wrap;
+           display: flex;
+           width: 100%;
+          
+        }
+
+        .menu1{
+            background-color: rgb(28, 68, 178);       
+            padding: 0.4rem 1rem;        
+           color: white;
+
+        }        
+      
+       i{       
+          height: 0.9rem;
+          margin-left: 3vw;
+          margin-right: 3rem;
+       }
+
+       .search{
+        height: 35px;
+        border-radius: 10px;
+        font-weight: 300;
+        font-size: 1rem;
+        font-family: arial;
+
+       }
+
+       .logo{
+        height: 5rem;
+        right: 20px;     
+        position: absolute;
+        top: 14px;
+        left: -35px;
+        
+      
+    
+    
+       }
+
+       .subnavar{
+         width: 100%;
+        background-color: rgb(214, 221, 240);       
+        padding: 0.4rem 1rem;
+        display: flex;
+        color: black;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        list-style: none;
+        -webkit-box-pack: justify;
+        -webkit-box-align: center;
+        line-height: 3rem;
+       }
+
+       ul{
+        margin-left: 3vw;
+       }
+
+       .subnavar{
+        width: 100%;
+
+       }
+
+       .imgbody{
+        width: 100%;
+        border: 2px solid rgb(0, 0, 0)
+       }
+
+       .image{
+        width: 60%;
+        float: right;
+        height: 50vh;
+       }
+
+       .bhawan{
+        width: 40%;
+        float:left;
+        height: 50vh;
+
+       }
+
+       marquee{
+        border-top: 3px;
+        border-bottom: 3px;
+        border: solid;
+        border-color: aqua;  
+        color: white;
+        font-size: 2rem;
+        background-color:  rgb(28, 68, 178);  
+        border-left: 0;
+        border-right: 0;
+        padding: 0.5rem;
+           
+       }
+
+       .news{
+        width: 100%;        
+       }
+
+       .news-img{
+          width: 90vw;
+          height: 40vh;
+          border-radius: 20px;          
+          box-shadow:0 0 15px rgb(116, 108, 112);
+          align-items: center;  
+          background-color: white;        
+          display: flex;         
+          justify-content: center;
+          margin: auto;
+          margin-top: 20px;
+         
+       }
+
+       .newbox{
+        background-color: red;       
+        border-radius: 20px;
+        width: 8rem;
+        height: 3.5rem;   
+       }
+
+       .main-content{
+        background-color: azure;
+        width: 100%;        
+        margin-top: 20px;
+        padding: 10vw;
+        line-height: 2rem;
+       }
+
+       .content{
+        float: left;
+        width: 40%;
+        text-align: justify;
+        font-size: 1.2rem;
+       }      
+
+       .bhawan-ic{
+        width: 60vh;
+        float: right;
+        border-bottom-right-radius:30px;
+        border: 5px solid rgb(219, 170, 10);
+       }
+
+       span,h3{
+        color: blue;
+       font-weight:bold;
+       font-size: 1.7rem;
+       }
+
+       h3{
+        color: black;
+       }
+
+       button{
+        width: 120px;
+        height: 40px;
+        background-color: rgb(41, 41, 124);
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 30px;
+       }
+
+       .teacher{
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         width: 100%;         
+         background-color: aquamarine;
+         
+       }
+
+       .tt-img{
+        width: 150px;
+        height: 200px;       
+
+       }
+
+       .i-box{
+         border: 2px solid black;    
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+         border-radius: 10px;
+         margin: 20px;
+       }
+
+       .location{
+          width: 100%;
+          height: 30vw;
+          background-color:  rgb(28, 68, 178);
+          display: flex;         
+          justify-content: center;
+          margin: auto;
+          padding: 30px;
+       }
+
+       h3{
+        color: white;        
+       }
+
+       footer{
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        color: white;
+        background-color: rgb(36, 173, 219);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 2rem;
+       }
+    </style>
+</head>
+<body>
+     <div class="menu">  
+         <div class="menu1">
+             <img src="sbte image.png " class="logo" alt="logo">
+                <ul>
+                 <li>HOME</li>
+                 <li>EMS PROTAL</li>
+                 <li>DOWNLOAD APPS</li>
+                 <li>AFFILIATION PROTAL</li>
+                 <li>LMS PROTAL (MOODLE)</li>
+                 <li> <input type="search" placeholder="search" class="search"></li>
+                 <li><i class="fa-brands fa-sistrix"></i></li>
+                 <li><i class="fa-brands fa-chrome"></i></li>
+               </ul>
+
+            
+          </div>
+
+             <div class="subnavar">
+                  <ul class="subnavar-menu">
+                      <li>SBTE</li>
+                       <li>STUDENT CORNER</li>
+                       <li> DOCUMENT & DOWNLOAD </li>
+                       <li>TRINNING & PLACEMENT</li>
+                       <li>ALUMANI</li>
+                       <li>DOCUMENT VERIFECATION & STATUS</li>
+                       <li>GRIEVANCE</li>
+                      <li>FAQ</li>
+                      <li>EXTERNAL LINKS</li>
+                      <li>COLLABORATION</li>
+                    </ul>
+              </div>
+  
+        </div>         
+    </div>
+
+    <div class="imgbody">
+        <img src="image1.jpg" alt="technical teacher" class="image">
+        <img src="technology bhawan.jpg" alt="technology bhawan" class="bhawan">
+    </div>
+    
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" >The registration for first Semester student (session 2025) and Third semester Leteral Entery (L.E.) student(session 2024) for the will be open form 22.09.2025 to 04.10.2025.</marquee>
+
+    <div class="news">
+        <div class="news-img">
+            <div class="newbox"></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="content">
+            <span>Science, Technology and Technical Education Department , Government of Bihar</span>
+
+            <h3>State Board of Technical Education Bihar</h3>
+
+         <p> The State Board of Technical Education (SBTE), Patna, Bihar, is responsible for evaluation and certification of six - semester Diploma Courses of all the Polytechnic Institutions affiliated to the SBTE Bihar. It has been constituted vide govt. order no. 75/Dir dated 31st May, 1955 under the Science, Technology and Technical Education Department , Government of Bihar. Since its formation the board is striving continuously for betterment of academic standard of Polytechnic Institutions of this State. SBTE offers a wide range of diploma and certificate programs in various fields of engineering and technology. The institution is committed to excellence and innovation in education, preparing students for careers in the ever-evolving technical landscape.</p>
+         <button>Watch Video</button>
+        </div>
+        <div class="bhawan-i">
+            <img src="technology bhawan.jpg" alt="bhawan-image" class="bhawan-ic">
+        </div>
+    </div>
+
+    <div class="teacher">
+        <div class="i-box">          
+            <img src="ttt.jpg" alt="" class="tt-img">              
+       </div>
+       
+        <div class="i-box">          
+            <img src="himanshu.jpeg" alt="" class="tt-img">              
+       </div>
+
+        <div class="i-box">          
+            <img src="Mandal.jpg" alt="" class="tt-img">              
+       </div>
+
+        <div class="i-box">          
+            <img src="chndra shekhar singh.jpg" alt="" class="tt-img">              
+       </div>          
+    </div>
+
+   <section class="location">
+    <h3>Reach Us</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.260888776083!2d84.004533276049!3d24.95723694137695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398db74f4232e643%3A0x46cfca538100b9d2!2sSt.%20Lawrence%20School!5e0!3m2!1sen!2sin!4v1781439409220!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
+
+   <footer>
+     Tt's by Ranjeet kumar
+   </footer>
+</body>
+</html>
